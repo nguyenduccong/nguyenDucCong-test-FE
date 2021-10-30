@@ -7,8 +7,6 @@
     position: fixed;
     top: 0;
     left: 0;
-   
-       
 
     @include large {
         height: $header-tablet-height;
@@ -34,12 +32,21 @@
     &_menu {
         @include flex(center, space-between);
         height: 100%;
-        font-size: 14px;
+        font-size: 1.4rem;
         color: $txt-white;
         text-transform: uppercase;
 
         &_logo {
             @include flex(center, center);
+
+            img {
+                @include tablet {
+                    width: 70%;
+                }
+                @include mobile {
+                    width: 50%;
+                }
+            }
         }
 
         &_item {
@@ -57,18 +64,15 @@
 
             &_item {
                 @include desktop {
-                    margin-right: 60px;
+                    margin-right: 6rem;
                 }
 
-                @include mobile {
-                    display: 50px;
-                }
                 &_line {
                     width: 1px;
                     height: 23px;
                     background: #ccc8c6;
 
-                    @include desktop{
+                    @include desktop {
                         width: 200px;
                         height: 1px;
                     }
@@ -101,7 +105,7 @@
                 }
 
                 &_item {
-                    &:nth-child(2){
+                    &:nth-child(2) {
                         margin-top: 80px;
                     }
                 }
@@ -115,7 +119,7 @@
                     color: $txt-white;
                     display: block;
                     position: absolute;
-                    right: 20px;
+                    right: 2rem;
                     font-size: 2.5rem;
                 }
             }
@@ -129,10 +133,14 @@
             top: 50%;
             right: 20px;
             transform: translateY(-50%);
-            display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             cursor: pointer;
+
+            @include tablet {
+                width: 30px;
+                height: 30px;
+            }
 
             &:hover {
                 span {
