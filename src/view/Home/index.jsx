@@ -3,7 +3,9 @@ import React from "react";
 import BannerTop from './components/BannerTop/Index';
 import Introduction from './components/introduction/index';
 import BestPD from './components/BestPD/index';
-import ListProduct from './components/Products/index'
+import ListProduct from './components/Products/index';
+import Story from './components/Story/index';
+import HappenedsIssue from './components/HappenedsIssue/index'
 
 const Home = () => {
 
@@ -16,6 +18,10 @@ const Home = () => {
       <BestPD></BestPD>
       {/*  */}
       <ListProduct></ListProduct>
+      {/*  */}
+      <Story></Story>
+      {/*  */}
+      <HappenedsIssue></HappenedsIssue>
     </>
   )
 }

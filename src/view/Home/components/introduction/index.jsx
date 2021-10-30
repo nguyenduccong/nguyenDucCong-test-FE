@@ -5,7 +5,7 @@ const Introduction = () => {
     return (
         <div className="section">
             <div className="introduction">
-                <img src="../images/introduction-bg.png" srcSet="../images/introduction-bg@2x.png,../images/introduction-bg@3x.png 3x" alt="" className="introduction_img" />
+                <img src="../images/introduction-bg.png" alt="" className="introduction_img" />
 
                 <div className="container">
                     <div className="section_title introduction_section_title">

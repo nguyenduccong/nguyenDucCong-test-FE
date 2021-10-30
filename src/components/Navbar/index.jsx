@@ -30,7 +30,7 @@ const Header = () => {
 
                     <div className={TonggleMobile ? "header_menu_left active" : "header_menu_left"} >
                         <div className="header_menu_left_close" onClick={HanleClick}>
-                            <i class='bx bx-x'></i>
+                            <i className='bx bx-x'></i>
                         </div>
 
                         <div className="header_menu_item  header_menu_left_item">
