@@ -38,6 +38,9 @@
 
         &_logo {
             @include flex(center, center);
+            @include large{
+                @include absoluteCenter("top")
+            }
 
             img {
                 @include tablet {
