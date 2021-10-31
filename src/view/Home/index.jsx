@@ -5,7 +5,8 @@ import Introduction from './components/introduction/index';
 import BestPD from './components/BestPD/index';
 import ListProduct from './components/Products/index';
 import Story from './components/Story/index';
-import HappenedsIssue from './components/HappenedsIssue/index'
+import HappenedsIssue from './components/HappenedsIssue/index';
+import Video from './components/Video/index'
 
 const Home = () => {
 
@@ -22,6 +23,8 @@ const Home = () => {
       <Story></Story>
       {/*  */}
       <HappenedsIssue></HappenedsIssue>
+      {/*  */}
+      <Video></Video>
     </>
   )
 }

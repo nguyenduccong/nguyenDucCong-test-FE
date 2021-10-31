@@ -435,61 +435,58 @@
                 border: 4px solid #020001;
                 background-color: $white;
                 border-left: none;
-                @include flex(center,center);
+                @include flex(center, center);
 
-                &_flexBox{
-                   width: 470px;
+                &_flexBox {
+                    width: 470px;
 
-                   @include laptop{
-                       width: 300px;
-                   }
-                   h2{
-                    color: $txt-bold-color;
-                    font-family: $font;
-                    font-size: 25px;
-                    font-weight: 800;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 2.4;
-                    letter-spacing: normal;
-                    padding-bottom: 39px;
-
-                    @include laptop{
-                        font-size: 18px;
-                        padding-bottom: 20px;
-                        line-height: 1.4;
-
+                    @include laptop {
+                        width: 300px;
                     }
-                    @include mobile{
-                        font-size: 13px;
-                        line-height: 1.2;
-                    }
-                   }
+                    h2 {
+                        color: $txt-bold-color;
+                        font-family: $font;
+                        font-size: 25px;
+                        font-weight: 800;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 2.4;
+                        letter-spacing: normal;
+                        padding-bottom: 39px;
 
-                   p{
-                    color: $txt-bold-color;
-                    font-size: 16px;
-                    font-weight: 300;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 1.88;
-                    letter-spacing: normal;
-                    padding-bottom: 47px;
-
-                    @include laptop{
-                        font-size: 13px;
-                        line-height: 1.2;
+                        @include laptop {
+                            font-size: 18px;
+                            padding-bottom: 20px;
+                            line-height: 1.4;
+                        }
+                        @include mobile {
+                            font-size: 13px;
+                            line-height: 1.2;
+                        }
                     }
 
-                    @include mobile{
-                        font-size: 11px;
-                        line-height: 1.2;
-                        padding-bottom: 20px;
+                    p {
+                        color: $txt-bold-color;
+                        font-size: 16px;
+                        font-weight: 300;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.88;
+                        letter-spacing: normal;
+                        padding-bottom: 47px;
+
+                        @include laptop {
+                            font-size: 13px;
+                            line-height: 1.2;
+                        }
+
+                        @include mobile {
+                            font-size: 11px;
+                            line-height: 1.2;
+                            padding-bottom: 20px;
+                        }
                     }
-                   }
                 }
-
-              
             }
         }
 
@@ -778,10 +775,31 @@
         }
     }
 
-    .HappenedsIssue{
-        padding: 158px;
+    .HappenedsIssue {
+        padding: 158px 0;
         background-color: $yelow;
         position: relative;
+
+        &_obj1 {
+            position: absolute;
+            width: 95px;
+            top: 42px;
+            right: 70px;
+
+            @include large {
+                width: 55px;
+            }
+        }
+
+        &_obj2 {
+            position: absolute;
+            top: 163px;
+            right: 68px;
+            @include large {
+                top: 90px;
+                width: 55px;
+            }
+        }
 
         &_section_title {
             @include flex(center, center);
@@ -800,11 +818,278 @@
             text-align: center;
             font-size: 16px;
             font-weight: 300 !important;
+            padding-bottom: 55px;
             @include tablet {
                 width: 100%;
                 font-size: 13px;
             }
         }
+
+        &_BoxIssue {
+            width: 100%;
+            margin-top: 128px;
+
+            @include large {
+                margin-top: 0;
+            }
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            &_itemBox {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .obj3 {
+                    position: absolute;
+                    bottom: -50px;
+                    right: -50px;
+                    z-index: 9;
+
+                    @include large {
+                        width: 95px;
+                    }
+
+                    @include tablet-s {
+                        max-width: 48px;
+                        bottom: -25px;
+                        right: -20px;
+                    }
+
+                    @include mobile {
+                        width: 40px;
+                    }
+                }
+
+                .obj4 {
+                    position: absolute;
+                    top: -30px;
+                    left: 26px;
+
+                    @include large {
+                        top: -17px;
+                        left: 0px;
+                        width: 70px;
+                    }
+
+                    @include tablet {
+                        top: -13px;
+                        width: 50px;
+                    }
+                }
+
+                .obj5 {
+                    position: absolute;
+                    bottom: -50px;
+                    left: -100px;
+                    @include large {
+                        left: -60px;
+                        width: 90px;
+                    }
+
+                    @include tablet {
+                        left: -50px;
+                        width: 70px;
+                        bottom: -40px;
+                    }
+                    @include mobile {
+                        left: -25px;
+                        width: 50px;
+                        bottom: -25px;
+                    }
+                }
+                &.first {
+                    span {
+                        font-family: $font;
+                        font-size: 55px;
+                        font-weight: 800;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.04;
+                        letter-spacing: normal;
+                        color: $black-test;
+                        width: 200px;
+                        text-align: center;
+                        @include large {
+                            font-size: 35px;
+                        }
+
+                        @include tablet-s {
+                            font-size: 33px;
+                        }
+
+                        @include mobile {
+                            font-size: 18px;
+                        }
+                    }
+
+                    img {
+                        max-width: 148px;
+
+                        @include tablet {
+                            max-width: 98px;
+                        }
+                        @include tablet-s {
+                            max-width: 48px;
+                        }
+                    }
+                    background-color: $red;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+
+                .title {
+                    width: 100%;
+                    padding: 27px;
+                    display: block;
+                    background-color: $black;
+                    font-size: 30px;
+                    font-weight: 800;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.67;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #fff;
+
+                    @include large {
+                        font-size: 20px;
+                    }
+                    @include tablet {
+                        font-size: 13px;
+                        padding: 13px;
+                    }
+
+                    @include tablet-s {
+                        font-size: 10px;
+                        padding: 11px;
+                    }
+                }
+            }
+        }
     }
 
+    .Video {
+        width: 100%;
+        padding: 148px 0 300px 0;
+        position: relative;
+
+        &_section_title {
+            @include flex(center, center);
+            flex-direction: column;
+            width: auto;
+            color: $black-test;
+            padding-bottom: 72px;
+        }
+
+        &_title {
+            text-align: center;
+        }
+
+        &_content {
+            width: 750px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 300 !important;
+            padding-bottom: 55px;
+            @include tablet {
+                width: 100%;
+                font-size: 13px;
+            }
+        }
+
+        .Boximage {
+            width: 100%;
+            text-align: center;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &_position1 {
+            position: absolute;
+            left:17%;
+            bottom: 0;
+            @include laptop {
+                bottom: 9%;
+                width: 200px;
+                left: 12%;
+            }
+            @include desktop {
+                bottom: 11%;
+                left: 3%;
+            }
+
+            @include tablet {
+                bottom: 14%;
+            }
+        }
+        &_position2 {
+            position: absolute;
+            bottom: 9%;
+            right: 20%;
+
+            @include laptop {
+                width: 45px;
+                bottom: 15%;
+                right: 15%;
+            }
+            @include tablet {
+                bottom: 20%;
+                right: 3%;
+            }
+        }
+        &_position3 {
+            z-index: -1;
+            position: absolute;
+            left: 14%;
+            bottom: 11%;
+
+            @include laptop {
+                left: 8%;
+                bottom: 15%;
+                width: 100px;
+            }
+
+            @include desktop {
+                left: -3%;
+                bottom: 15%;
+                width: 100px;
+            }
+
+            @include tablet{
+                left: -3%;
+                bottom: 22%;
+                width: 70px;
+            }
+        }
+        &_position4 {
+            position: absolute;
+            top: 22%;
+            left: -16%;
+            z-index: -1;
+        }
+        &_position5 {
+            position: absolute;
+            display: none;
+        }
+        &_position6 {
+            position: absolute;
+            display: none;
+        }
+        &_position7 {
+            position: absolute;
+            display: none;
+        }
+        &_position8 {
+            position: absolute;
+            display: none;
+        }
+        &_position9 {
+            position: absolute;
+            display: none;
+        }
+    }
 }
