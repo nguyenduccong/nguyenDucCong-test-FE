@@ -75,7 +75,6 @@ img {
 .container {
     width: 100%;
     max-width: 1569px;
-    // padding: 0 50px;
     margin: 0 auto;
 
     @include laptop{
@@ -106,14 +105,41 @@ img {
     @include mobile{
         max-width: 300px;
     }
+}
 
-    // @include tablet {
-    //     padding: 0 20px;
-    // }
+.container-fluid{
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
 
-    // @include mobile {
-    //     padding: 0 10px;
-    // }
+    @include laptop{
+        max-width: 1360px;
+    }
+
+    @include desktop{
+        max-width:1080px;
+    }
+
+    @include maxWidth(900){
+        max-width: 800px;
+    }
+
+    @include maxWidth(700){
+      max-width: 500px;
+    }
+
+    @include tablet{
+        max-width: 720px;
+    }
+
+    
+    @include maxWidth(700){
+        max-width: 520px;
+      }
+
+    @include mobile{
+        max-width: 300px;
+    }
 }
 
 .main {
