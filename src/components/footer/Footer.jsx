@@ -7,6 +7,8 @@ const Footer = () => {
         <div className="section">
             <footer>
                 <div className="container-fluid">
+                    <div className="line"></div>
+
                     <div className="content_footer">
                         <div className="content_footer_boxLeft">
                             <div className="content_footer_title">
@@ -40,7 +42,16 @@ const Footer = () => {
 
                         </div>
                     </div>
-                    <div className="infor_footer"></div>
+                    <div className="line"></div>
+                    <div className="infor_footer">
+                        <div className="infor"><span>© 2020-2021 what happened corp  l  (주) 왓헤픈 ｜</span> <span>대표자 : 홍길동 ｜</span><span> 사업자 등록번호 : 356-00-00000 ㅣ</span> test0101@what happened.co.kr <br />
+                            <span>서울특별시 강남구 도산대로 8길 17 ｜</span> <span>FAX : 070-0000-0000  l  서비스 이용약관  l  개인정보처리방침</span></div>
+                        <div className="icons">
+                            <img src="../images/snsicon-01.png" alt="" />
+                            <img src="../images/snsicon-02.png" alt="" />
+                            <img src="../images/snsicon-03.png" alt="" />
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>

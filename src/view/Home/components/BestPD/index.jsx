@@ -2,6 +2,8 @@ import React from 'react';
 import ItemProduct from './components/ItemProduct/index';
 import Slider from "react-slick";
 
+import {bestProduct} from '../../../../data/bestProduct'
+
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -56,9 +58,9 @@ const BestPD = () => {
                     <div className="container">
                         <div className="box_square_products" >
                             <Slider {...settings}>
-                                <ItemProduct />
-                                <ItemProduct />
-                                <ItemProduct />
+                                {bestProduct.map((item,idx)=>(
+                                    <ItemProduct key={idx} data={item}></ItemProduct>
+                                ))}
                             </Slider>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
         <div className="header" >
-            <div className="containet-fluid">
+            <div className="container-fluid">
                 <div className="header_menu">
                     <div className="header_menu_logo">
                         <Link to="/">
