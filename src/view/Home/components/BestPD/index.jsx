@@ -15,38 +15,40 @@ const BestPD = () => {
         slidesToScroll: 1,
         responsive: [
             {
-              breakpoint: 800,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false
-              }
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
             },
             {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
             // instead of a settings object
-          ]
+        ]
     };
 
     return (
         <div className="section">
             <div className="BestPD">
-                <div className="section_title BestPD_section_title">
-                    <div className="title BestPD_title">
-                        Best Product
-                    </div>
+                <div className="container">
+                    <div className="section_title BestPD_section_title">
+                        <div className="title BestPD_title">
+                            Best Product
+                        </div>
 
-                    <div className="content BestPD_content">
-                        How to create mobile-optimized videos in minutes. Not a designer,
-                        every team makes a lot of videos Can be trimmed. Take the first
+                        <div className="content BestPD_content">
+                            How to create mobile-optimized videos in minutes. Not a designer,
+                            every team makes a lot of videos Can be trimmed. Take the first
+                        </div>
                     </div>
                 </div>
 
